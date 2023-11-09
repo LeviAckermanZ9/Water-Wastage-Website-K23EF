@@ -1,0 +1,111 @@
+/* styles.css */
+
+/* Reset default margin and padding */
+body, h1, h2, p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Set a background color */
+body {
+    background-color: #f2f2f2;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+    background-color: #0074d9;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Style the navigation menu */
+nav ul {
+    list-style-type: none;
+    background-color: #333;
+    overflow: hidden;
+}
+
+nav li {
+    float: left;
+}
+
+nav a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    background-color: #0074d9;
+}
+
+/* Style the sections */
+section {
+    background-color: white;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 5px;
+}
+
+/* Style the footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+/* Add additional styles as needed */
+/* Add a background image to the body element */
+body {
+    position: relative;
+    background-image: url('background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+/* Create a semi-transparent overlay */
+body::before {
+    content: "";
+    background-color: rgba(255, 255, 255, 0.2); /* Adjust the alpha (fourth value) to control transparency */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+/* Add these styles to your style.css file */
+
+/* Style the search container */
+.search-container {
+    float: right;
+    margin-top: 10px;
+}
+
+/* Style the search input */
+.search-container input[type="text"] {
+    padding: 8px;
+    border: none;
+    border-radius: 3px;
+}
+
+/* Style the search button */
+.search-container button[type="submit"] {
+    background-color: #0074d9;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    padding: 8px 12px;
+    cursor: pointer;
+}
+
+/* Style the search button on hover */
+.search-container button[type="submit"]:hover {
+    background-color: #0056a9;
+}

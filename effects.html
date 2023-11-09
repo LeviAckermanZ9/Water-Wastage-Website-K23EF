@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Effects of Water Wastage</title>
+    <link rel="stylesheet" type="text/css" href="style1.css">
+    <style>
+        body {
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 20px;
+            font-family: Arial, sans-serif;
+        }
+        
+        h1 {
+            background-color: #0074d9;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+        
+        p, ul {
+            background-color: #fff;
+            border: 1px solid #fff;
+            padding: 20px;
+            border-radius: 5px;
+            margin: 10px;
+        }
+        
+        li {
+            list-style-type: disc;
+            margin-left: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Effects of Water Wastage</h1>
+    <p>Water wastage can lead to a range of detrimental effects, including:</p>
+    <ul>
+        <li>Depletion of freshwater resources, impacting ecosystems and availability for human use.</li>
+        <li>Reduced water quality, leading to health hazards and environmental pollution.</li>
+        <li>Increased energy consumption for water treatment and transportation.</li>
+        <li>Threats to biodiversity as aquatic habitats are affected by water scarcity.</li>
+    </ul>
+    <p><strong>Here are a few effects of water wastage in detail:</strong></p>
+    <p><strong>I. Environmental Effects of Water Wastage:</strong>Water is a precious natural resource that is essential for life on earth. However, the inefficient use and wastage of water have several adverse environmental effects. Water scarcity and depletion of natural resources, effects on biodiversity and aquatic life, and contribution to climate change and global warming are some of the significant environmental effects of water wastage.</p>
+    <section>
+    <ul>
+        <li><strong><u>Water scarcity and depletion of natural resources:</u></strong>Water is a finite resource, and wastage leads to water scarcity, which can have severe environmental consequences. In arid and semi-arid regions, water wastage can deplete the already scarce water resources, leading to desertification, soil erosion, and loss of vegetation. The depletion of natural resources due to water wastage can also impact the availability of water for agriculture and other human activities, leading to reduced food production and economic instability.</li>
+        <li><strong><u>Effects on biodiversity and aquatic life:</u></strong>Water wastage can have severe impacts on aquatic ecosystems and biodiversity. The reduction of water availability due to wastage can lead to a decline in aquatic habitats, endangering the survival of aquatic life. Additionally, the contamination of water sources due to wastewater and chemical pollutants can have severe health impacts on aquatic life and even humans who rely on these water sources.</li>
+        <li><strong><u>Contribution to climate change and global warming:</u></strong>Water wastage also has significant impacts on climate change and global warming. Wastewater treatment and distribution require a significant amount of energy, leading to increased greenhouse gas emissions. Furthermore, the depletion of water resources due to wastage can also lead to the reduction of carbon sequestration in forests and other vegetation, which can worsen the effects of climate change.</li>
+        <img src="effects.jpg" alt="Effects" style="width: 300px; border: 4px solid #0074d9; border-radius: 5px; margin-top: 20px;">
+    </ul>
+    </section>
+    <p><strong>II. Economic Effects of Water Wastage:</strong></p>
+    <section>
+        <ul>
+            <li><strong><u>Increased water bills and costs:</u></strong>When water is wasted, it leads to increased demand for water, which can lead to higher water bills for households and businesses. Water utilities may also have to spend more on infrastructure and maintenance to meet the demand for water. This, in turn, can lead to higher taxes or fees for water usage, affecting the cost of living for individuals and businesses.</li>
+            <li><strong><u>Loss of revenue for businesses:</u></strong>Water is a critical input for many businesses, including agriculture, food processing, and manufacturing. When water is wasted, businesses may experience a shortage of water supply, which can affect their production capacity and profitability. This can lead to reduced revenues, loss of jobs, and, in extreme cases, business closure.</li>
+            <li><strong><u>Impact on agricultural production and food prices:</u></strong>Agriculture is one of the most water-intensive economic activities, and water wastage can have a significant impact on crop yields and quality. When water is wasted, farmers may experience a shortage of water supply, leading to reduced crop production, lower quality produce, and increased production costs. This, in turn, can lead to higher food prices for consumers, especially in regions heavily dependent on agriculture.</li>
+            <img src="moneyloss.jpg" alt="economic effects" style="width: 300px; border: 4px solid #0074d9; border-radius: 5px; margin-top: 20px;">
+        </ul>
+    </section>
+    <p><strong>III. Social Effects of Water Wastage:</strong></p>
+    <section>
+        <ul>
+            <li><strong><u>Inequitable distribution of water resources:</u></strong>One of the most significant social effects of water wastage is the inequitable distribution of water resources. In many parts of the world, access to clean and safe water is not evenly distributed, and people living in rural or poor urban areas often face water scarcity and poor water quality. When water is wasted, it exacerbates the water scarcity problem and reduces the availability of water for those who need it the most. This, in turn, increases the burden on vulnerable communities, especially women and girls, who have to travel long distances to fetch water.</li>
+            <li><strong><u>Health risks and diseases caused by water contamination:</u></strong>Water wastage also poses health risks and diseases caused by water contamination. When water is wasted, it can lead to the accumulation of stagnant water, which becomes a breeding ground for mosquitoes and other disease-causing organisms. This can increase the risk of waterborne diseases such as cholera, typhoid, and diarrhea, which disproportionately affect vulnerable communities with limited access to healthcare.</li>
+            <li><strong><u>Impact on access to education and employment opportunities:</u></strong>Furthermore, water wastage can impact access to education and employment opportunities. Children and women are often responsible for fetching water in households where water is scarce. This takes away valuable time that could be used for education or income-generating activities, affecting their future opportunities. Similarly, businesses and industries that rely on water for their operations may face operational challenges or even closure due to water scarcity or poor water quality.</li>
+            <img src="waterborne2.jpg" alt="Water Borne Diseases" style="width: 300px; border: 4px solid #0074d9; border-radius: 5px; margin-top: 20px;">
+        </ul>
+    </section>
+    <p><strong>The Below Is The Water Usage Graph:</strong></p>
+    <div class="graph-container">
+        <h2>Water Usage Graph</h2>
+        <canvas id="myChart" class="graph"></canvas>
+    </div>
+<section>
+       <!-- Include Chart.js library -->
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script>
+    // JavaScript code for the chart
+    var ctx = document.getElementById('myChart').getContext('2d');
+    var data = {
+        labels: ['Borehole', 'Water Tankering', 'Rainwater Harvesting', 'Shallow Wells', 'Earth Dams', 'Piped Water'],
+        datasets: [{
+            label: 'Water Usage',
+            data: [0, 0, 0, 0, 0, 0],
+            backgroundColor: 'rgba(0, 51, 102, 0.5)' // Slightly darker color
+        }]
+    };
+
+    var myChart = new Chart(ctx, {
+        type: 'bar',
+        data: data,
+        options: {
+            animation: {
+                duration: 2000, // Animation duration in milliseconds
+                easing: 'easeOutBounce' // Easing function
+            },
+            scales: {
+                x: {
+                    beginAtZero: true
+                },
+                y: {
+                    beginAtZero: true
+                }
+            },
+            plugins: {
+                legend: {
+                    display: false // Hide the legend
+                }
+            }
+        }
+    });
+
+    // Function to animate the bars
+    function animateBars() {
+        var dataset = myChart.data.datasets[0];
+        var targetData = [18, 5, 27, 18, 9, 21]; // Your target data values
+        var step = 1; // Adjust as needed
+
+        var animationInterval = setInterval(function() {
+            var allValuesReached = true;
+            for (var i = 0; i < dataset.data.length; i++) {
+                if (dataset.data[i] < targetData[i]) {
+                    dataset.data[i] += step;
+                    allValuesReached = false;
+                }
+            }
+
+            myChart.update();
+
+            if (allValuesReached) {
+                clearInterval(animationInterval);
+            }
+        }, 30); // Adjust the animation speed
+    }
+
+    // Call the function to start the animation after a delay
+    setTimeout(animateBars, 500); // Adjust the delay in milliseconds as needed
+
+    // Adjust hover effect
+    var canvas = document.getElementById('myChart');
+    canvas.addEventListener('mousemove', function(event) {
+        var items = myChart.getElementsAtEvent(event);
+        if (items.length > 0) {
+            canvas.style.cursor = 'pointer';
+            items.forEach(function(item) {
+                item.element._model.backgroundColor = 'rgba(0, 45, 90, 0.2)'; // Slightly lighter color on hover
+            });
+            myChart.update();
+        } else {
+            canvas.style.cursor = 'default';
+            myChart.data.datasets[0].backgroundColor = 'rgba(75, 192, 192, 0.5)'; // Restore the default color
+            myChart.update();
+        }
+    });
+</script>
+</section>
+
+    </script>
+    <p>Understanding these effects highlights the urgency of addressing water wastage and promoting sustainable water management.</p>
+</body>
+</html>

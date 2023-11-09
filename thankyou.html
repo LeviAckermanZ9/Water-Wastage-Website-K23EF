@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Thank You</title>
+    <style>
+        /* CSS for styling and animations */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+
+        .thank-you-container {
+            text-align: center;
+            margin-top: 20%;
+        }
+
+        .thank-you-text {
+            font-size: 24px;
+            color: #0074d9;
+        }
+
+        .animation {
+            animation-name: fadeIn;
+            animation-duration: 4s;
+            animation-timing-function: ease;
+        }
+
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="thank-you-container">
+        <p class="thank-you-text animation">Thank you for contacting us!</p>
+        <p class="animation">Your message has been received.</p>
+        <p class="animation">We will get back to you as soon as possible.</p>
+        <a href="main.html" class="animation">Return to Home</a>
+    </div>
+</body>
+</html>
